@@ -1,0 +1,100 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>STUDENT REGISTRATION FORM</title>
+    
+        <header style="background-color: goldenrod; padding: 10px; text-align: center;">
+            <h1 style="font-size: 45px;">STUDENT REGISTRATION FORM</h1>
+            <nav>
+             <a href="index.html" style="margin: 0 15px; text-decoration: none; color: black;">Home</a>
+             <a href="Daftar Mahasiswa.html" style="margin: 0 15px; text-decoration: none; color: black;">Daftar Mahasiswa</a>
+             <a href="Library.html" style="margin: 0 15px; text-decoration: none; color: black;">Library</a>
+             </nav>
+             <img src="https://png.pngtree.com/png-clipart/20230928/original/pngtree-education-school-logo-design-academy-library-badge-vector-png-image_12898121.png"; alt="Logo-Perpus-contoh" style="width: 100px; height: 100px; margin-top: -120px; float: right; border-radius: 5px;">
+         </header>
+    </head>
+
+    <body style="background-color:white;">
+        <fieldset style="margin-bottom: 15px; border-radius: 15px; border:  2px solid rgb(157, 126, 0); padding: 10px; margin-top: 20px; margin-left: 50px; margin-right: 100px; align-items: center;">
+        <h1 style="text-align: center;">FORMULIR DAFTAR PERPUSTAKAAN</h1>
+        <p>Selamat datang di Student Registration Form. Silakan lengkapi data pribadi Anda dengan jujur dan tepat sesuai kolom yang tersedia. Informasi yang Anda berikan bersifat rahasia dan hanya digunakan untuk keperluan akademik dan perpustakaan. Setelah semua terisi, periksa kembali sebelum menekan tombol Submit.</p>
+            <main style="padding: 10px;">
+                <form method="get" action="#">
+                    <fieldset style="margin-bottom: 25px; background-color: khaki; border-color: beige; border-top-left-radius: 20px; border-top-right-radius: 20px;">
+                        <Legend style="text-align: center; font-size: 20px;"><strong>Personal Information</strong></Legend>
+
+                            <label for="fname">Full Name:</label><br>
+                            <input type="text"; id="name"; placeholder="Your Full Name"; style="width: 98%; border-radius: 5px; border: 2px; padding: 9px"><br><br>
+
+                            <label for="Email">Email:</label><br>
+                            <input type="email"; id="Email"; placeholder="Your Email"; style="width: 98%; border-radius: 5px;border: 2px; padding: 9px"><br><br>
+
+                            <label for="Password">Password:</label><br>
+                            <input type="password"; id="Password"; style="width: 98%; border-radius: 5px;border: 2px;; padding: 9px"><br><br>
+
+                            <label for="dob">Date of Birth:</label><br>
+                            <input type="date" id="dob"; name="dob"; style="width: 98%; border-radius: 5px;; padding: 9px"><br><br>
+
+                            <label for="Gender" style="font-size: 5mm;";">Your Gender:</label><br>
+                            <input type="radio"; id="male"; name="Gender"; value="Male">
+                            <label for="male">Male </label><br>
+                            <input type="radio"; id="Female"; name="Gender"; value="Female">
+                            <label for="Female">Female</label><br><br>
+                    </fieldset>
+
+                    <fieldset style="border-radius: 30px; background-color:khaki; border-color: blueviolet; margin-bottom: 20px;">
+                        <legend style="text-align: center; font-size: 20px;"><strong>Academy Information</strong></legend>
+
+                            <label for="program of study">Program of Study:</label><br>
+                            <select id="program"; name="Program of Study">
+                                <option value="">--Select program of study--</option>
+                                <option value="Bahasa Inggris">Bahasa Inggris</option>
+                                <option value="Geografi">Geografi</option>
+                                <option value="Teknologi Informasi">Teknologi Informasi</option>
+                                <option value="Ekonomi Pembangunan">Ekonomi Pembangunan</option>
+                                <option value="Matematika">Matematika</option>
+                                <option value="Fisika">Fisika</option>  
+                            </select><br><br>
+
+                            <label for="Faculty"> Faculty</label><br>
+                            <input type="checkbox"; id="fmipa"; name="Faculty"; value="FMIPA">
+                            <label for="fmipa">FMIPA</label><br>
+                            <input type="checkbox"; id="Fsip"; name="Faculty"; value="FSIP">
+                            <label for="FSIP">FSIP</label><br>
+                            <input type="checkbox"; id="Fbs"; name="Faculty"; value="FBS">
+                            <label for="FBS">FBS</label><br>
+                            <input type="checkbox"; id="Fis"; name="Faculty"; value="FIS">
+                            <label for="FIS">FIS</label><br><br>
+
+                            <label for="Photo Profile">Upload Photo Profile:</label><br>
+                            <input type="file" id="photo profile"; name="photo profile" accept="image/*"><br><br>
+                    </fieldset>
+                    
+                    <fieldset style="margin-bottom: 25px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; background-color: khaki; border-color: skyblue; border: 5px dotted whitesmoke;">
+                        <legend style="text-align: center; font-size: 20px;"><strong>Additional Details</strong></legend>
+
+                            <label for="addres">Addres:</label><br>
+                            <textarea id="addres"; name="addres" rows="5" cols="177" placeholder="Your home addres, please!"></textarea><br>
+
+                            <label for="Motivation">Why do you want to join the library members?</label><br>
+                            <textarea id="Motivation"; name="Motivation"; rows="3" cols="177"; placeholder="Write here your reason"></textarea><br><br>
+
+                            <input type="reset"; value="Reset Form"; style="background-color: red"><br><br>
+                            <input type="submit" value="Save and Submit"; style="background-color: green;">
+                    </fieldset>
+                </form>
+            </main>
+        </fieldset>
+    </body>
+
+        <footer style="background-color: goldenrod; padding: 10px; text-align: center;">
+            <p> <i>2025 Student Registration for library. All rights reserved.</i></p>
+            <address>Jalan Perintis Kemerdekaan, Kota Makassar, Sulawesi Selatan</address><br>
+            <a>Any question?</a>
+            <nav>
+               <span></span> <a href="contact us.html"; style="margin-right: 15px; color: black;">Contact Us</a></span>
+            </nav>
+        </footer>
+</html>
